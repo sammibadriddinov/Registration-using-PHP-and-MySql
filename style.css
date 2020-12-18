@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.content{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.form{
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  width: 320px;
+  text-align: center;
+}
+
+.form i{
+  z-index: 1;
+  color: #ccc;
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+
+.form .signup-form{
+  display: none;
+}
+
+.form .user-input{
+  width: 320px;
+  height: 55px;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-property: border-left, border-right, box-shadow;
+}
+
+.form .user-input:hover, .form .user-input:focus, .form .user-input:active{
+  border-left: solid 8px #4285F4;
+  border-right: solid 8px #4285F4;
+  box-shadow: 0 0 100px rgba(66, 133, 244, 0.8);
+}
+
+.form .options-01{
+  margin-bottom: 50px;
+}
+
+.form .options-01 input{
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.form .options-01 .remember-me{
+  color: #bbb;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  float: left;
+  cursor: pointer;
+}
+
+.form .options-01 a{
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+  float: right;
+}
+
+.form .btn{
+  outline: none;
+  border: none;
+  width: 320px;
+  height: 55px;
+  background: #4285F4;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: border-left, border-right, box-shadow;
+}
+
+.form .btn:hover{
+  border-left: solid 8px rgba(255, 255, 255, 0.5);
+  border-right: solid 8px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 100px rgba(66, 133, 244, 0.8);
+}
+
+.form .options-02{
+  color: #bbb;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.form .options-02 a{
+  color: #4285F4;
+}
+
+
+@media screen and (max-width: 500px){
+  .form{
+    width: 95%;
+  }
+
+  .form .user-input{
+    width: 100%
+  }
+
+  .form .btn{
+    width: 100%;
+  }
+}
